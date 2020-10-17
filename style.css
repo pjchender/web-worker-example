@@ -1,5 +1,5 @@
 html {
-  background-color: #7d2663;
+  background-color: #202729;
   font-family: sans-serif;
 }
 
@@ -39,4 +39,8 @@ p {
 
 .controls div {
   padding-bottom: 1rem;
+}
+
+input {
+  outline: 2px solid transparent;
 }

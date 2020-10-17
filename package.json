@@ -1,0 +1,25 @@
+{
+  "name": "jsdc-worker-example",
+  "version": "1.0.0",
+  "description": "This repository is forked from [simple-web-worker](https://github.com/mdn/simple-web-worker) @ MDN.",
+  "main": "main.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjchender/web-worker-sandbox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pjchender/web-worker-sandbox/issues"
+  },
+  "homepage": "https://github.com/pjchender/web-worker-sandbox#readme",
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "regenerator-runtime": "^0.13.7"
+  }
+}

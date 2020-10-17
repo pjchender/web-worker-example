@@ -4,10 +4,10 @@ const first = document.querySelector('#number1');
 const second = document.querySelector('#number2');
 const result = document.querySelector('.result');
 
-if (window.Worker) {
-  const myWorker = new Worker(`./worker.js?1`);
+if (!window.Worker) {
+  const myWorker = new Worker(`./worker.js`);
 
-  first.addEventListener('input', () => {
+  first.addEventListener('input', (e) => {
     myWorker.postMessage([first.value, second.value]);
   });
 
@@ -29,3 +29,19 @@ if (window.Worker) {
     result.textContent = data;
   });
 }
+
+first.addEventListener('keydown', (e) => {
+  e.target.style.outlineColor = '#de4463';
+});
+
+first.addEventListener('keyup', (e) => {
+  e.target.style.outlineColor = 'transparent';
+});
+
+second.addEventListener('keydown', (e) => {
+  e.target.style.outlineColor = '#de4463';
+});
+
+second.addEventListener('keyup', (e) => {
+  e.target.style.outlineColor = 'transparent';
+});
