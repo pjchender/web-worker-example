@@ -21,4 +21,4 @@ var n,t=arguments[3],r=require("buffer").Buffer;(function(){var r,e=200,u="Unsup
 },{"buffer":"ncOR"}],"iltZ":[function(require,module,exports) {
 "use strict";require("regenerator-runtime/runtime");var e=require("./cpu-intensive"),r=require("lodash");onmessage=(0,r.debounce)(function(r){var s=(0,e.calculate)(r.data[0],r.data[1]);isNaN(s)?postMessage("Worker: Please write two numbers"):postMessage("Result: "+s)},500);
 },{"regenerator-runtime/runtime":"KA2S","./cpu-intensive":"koT9","lodash":"HJaA"}]},{},["iltZ"], null)
-//# sourceMappingURL=/worker.cc3a293d.js.map
+//# sourceMappingURL=/web-worker-example/worker.cc3a293d.js.map
