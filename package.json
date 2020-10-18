@@ -1,28 +1,32 @@
 {
-  "name": "jsdc-worker-example",
+  "name": "web-worker-example",
   "version": "1.0.0",
   "description": "This repository is forked from [simple-web-worker](https://github.com/mdn/simple-web-worker) @ MDN.",
   "main": "main.js",
   "scripts": {
     "start": "parcel index.html",
+    "build": "parcel build index.html --public-url /web-worker-example/",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pjchender/web-worker-sandbox.git"
+    "url": "git+https://github.com/pjchender/web-worker-example.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pjchender/web-worker-sandbox/issues"
+    "url": "https://github.com/pjchender/web-worker-example/issues"
   },
-  "homepage": "https://github.com/pjchender/web-worker-sandbox#readme",
+  "homepage": "https://github.com/pjchender/web-worker-example#readme",
   "dependencies": {
     "lodash": "^4.17.20",
     "regenerator-runtime": "^0.13.7"
   },
   "devDependencies": {
+    "cssnano": "^4.1.10",
+    "gh-pages": "^3.1.0",
     "sass": "^1.27.0"
   }
 }
