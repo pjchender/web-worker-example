@@ -8,7 +8,7 @@
 
   <title>Web Workers basic example</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.scss">
   <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -19,7 +19,13 @@
 
   <div class="controls" tabindex="0">
 
-    <form>
+    <div class="switch-btn">
+      <input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch" />
+      <label class="switch-paddle" for="exampleSwitch"></label><span class="switch-text"
+        data-text="Web Worker Off"></span>
+    </div>
+
+    <form id="form">
       <div>
         <label for="number1">Multiply number 1: </label>
         <input type="text" id="number1" value="0">
